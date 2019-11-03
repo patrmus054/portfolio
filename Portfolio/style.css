@@ -101,6 +101,8 @@ ion-icon {
 }
 
 header {
+    position: absolute;
+    z-index: 99999999999;
     float: right;
     list-style: none;
     margin: 40px 40px;
@@ -436,5 +438,5 @@ textarea {
 }
 
 #menuToggle.gone{
-    display: none;
+    visibility: hidden;
 }
