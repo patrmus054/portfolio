@@ -234,22 +234,6 @@
 
     </footer>
 
-    <script>
-        function distanceBetweenElems(elem1, elem2) {
-            var e1Rect = elem1.getBoundingClientRect();
-            var e2Rect = elem2.getBoundingClientRect();
-            var dx = (e1Rect.left + (e1Rect.right - e1Rect.left) / 2) - (e2Rect.left + (e2Rect.right - e2Rect.left) /
-                2);
-            var dy = (e1Rect.top + (e1Rect.bottom - e1Rect.top) / 2) - (e2Rect.top + (e2Rect.bottom - e2Rect.top) / 2);
-            var dist = Math.sqrt(dx * dx + dy * dy);
-            return dist;
-        }
-        var target1 = document.querySelector('#work');
-        var target2 = document.querySelector('#menuToggle');
-        if (distanceBetweenElems(target1, target2) < 100) {
-            console.log(distanceBetweenElems(target1, target2))
-        }
-    </script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
