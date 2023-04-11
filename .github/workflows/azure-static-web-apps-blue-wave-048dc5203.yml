@@ -30,6 +30,7 @@ jobs:
           app_location: "Portfolio/index.html" # App source code path
           api_location: "" # Api source code path - optional
           output_location: "/" # Built app content directory - optional
+          cwd: $(Pipeline.Workspace)
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
